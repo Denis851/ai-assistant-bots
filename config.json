@@ -1,0 +1,42 @@
+{
+    "workzilla_url": "https://workzilla.com",
+    "openai_api_key": "your-api-key-here",
+    
+    "keywords": [
+        "отзыв", "комментарий", "обзор", "текст",
+        "яндекс", "google", "авито", "озон",
+        "wildberries", "сбермегамаркет", "2гис"
+    ],
+    
+    "stop_words": [
+        "покупка", "скачать", "купить", "выкуп",
+        "маршрут", "активность", "накрутка", "бот"
+    ],
+    
+    "gpt_system_prompt": "Вы - профессиональный менеджер по работе с клиентами. Ваша задача - вежливо и четко общаться с заказчиками, уточнять детали заданий и согласовывать результаты работы.",
+    
+    "platforms": {
+        "yandex": {
+            "url": "https://yandex.ru",
+            "selectors": {
+                "review_button": "//button[contains(text(), 'Написать отзыв')]",
+                "rating": "//div[@class='rating-selector']",
+                "text_area": "//textarea[@class='review-text']"
+            }
+        },
+        "google": {
+            "url": "https://google.com",
+            "selectors": {
+                "review_button": "//button[@aria-label='Write a review']",
+                "rating": "//div[@class='rating-container']",
+                "text_area": "//textarea[@aria-label='Review text']"
+            }
+        }
+    },
+    
+    "browser_settings": {
+        "headless": false,
+        "screenshot_delay": 2,
+        "action_delay": 1
+    }
+} 
