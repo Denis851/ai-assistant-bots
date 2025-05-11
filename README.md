@@ -1,5 +1,5 @@
 # Боты
 
-Python-проект ИИ-помощника с OpenAI, Speech Recognition, Browser Automation и Telegram Bot.
+Python-проект (помощник для фильрации заявок и ответа на них).
 
 
